@@ -1,0 +1,8 @@
+#zone_chat{
+	overflow: auto;
+}
+.desc{
+	float:left;
+	margin-right: 5px;
+  border-style: groove;
+}

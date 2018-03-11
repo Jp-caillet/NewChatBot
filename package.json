@@ -1,0 +1,34 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./public/* ./routes/* ./app.js",
+    "start": "browserify public/index.js -o public/bundle.js && node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darlok77/chatBot.git"
+  },
+  "author": "Guillaume DALLEAU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darlok77/chatBot/issues"
+  },
+  "homepage": "https://github.com/darlok77/chatBot#readme",
+  "devDependencies": {
+    "browserify": "^15.2.0",
+    "eslint": "^4.16.0"
+  },
+  "dependencies": {
+    "botcarrefour": "file:packages/botCarrefour",
+    "botmeteo": "file:packages/botMeteo",
+    "botuber": "file:packages/botUber",
+    "botyoutube": "file:packages/botYoutube",
+    "deasync": "^0.1.12",
+    "express": "^4.10.2",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.4"
+  }
+}
