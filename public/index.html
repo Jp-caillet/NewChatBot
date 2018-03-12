@@ -3,24 +3,24 @@
     <head>
         <meta charset="utf-8" />
         <title>Chat</title>
-        <style>
-            #zone_chat strong {
-                color: white;
-                background-color: black;
-                padding: 2px;
-            }
-        </style>
        <link rel="stylesheet" type="text/css"  href="index.css"/>
 
     </head>
  
     <body>
         <h1>CHAT</h1>
-        
-        <div id="zone_chat"></div>
-        <p id="demo"></p>
-        <input type="text" name="message" id="message" placeholder="Votre message..." size="50" autofocus />
-         
+
+        <div id="login">
+            <label for="user">Username</label>
+            <input id="user" autofocus />
+            <p>
+              <button id ="logger">Login</button>
+            </p>
+        </div>
+        <div id="chat">
+            <div id="zone_chat"></div>
+            <input type="text" name="message" id="message" placeholder="Votre message..." size="50" autofocus />
+        </div>
         <script src="bundle.js" type="text/javascript"></script>
     </body>
 </html>

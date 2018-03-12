@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./public/* ./routes/* ./app.js",
+    "lint": "eslint ./public/packages/* ./public/index.js  ./app.js",
     "start": "browserify public/index.js -o public/bundle.js && node app"
   },
   "repository": {

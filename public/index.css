@@ -1,5 +1,6 @@
 #zone_chat{
 	overflow: auto;
+  padding: 2px;
 }
 .desc{
 	float:left;

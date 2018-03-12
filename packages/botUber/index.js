@@ -15,35 +15,34 @@ module.exports = class BotUber {
    * Initialize
    * @return {BotCarrefour}
    */
-  init(){
-
+  init () {
     const map = new Botmap (this.destination);
+
     map.run();
     this.endLatitude = map.getLatitude();
     this.endLongitude = map.getLongitude();
     return;
   }
-  
+
   /**
    * Request
    * @return {string} body
    */
   request (callback) {
-
     const options = {
-      method: 'GET',
-      url: 'https://api.uber.com/v1.2/estimates/price',
-      qs: {
+      'method': 'GET',
+      'url': 'https://api.uber.com/v1.2/estimates/price',
+      'qs': {
         'start_longitude': this.startLongitude,
-        'start_latitude': this.startLatitude, 
+        'start_latitude': this.startLatitude,
         'end_latitude': this.endLatitude,
         'end_longitude': this.endLongitude
       },
-      headers:{
+      'headers': {
         'Authorization': 'Token ' + 'aBxZ-6xJF5xCegAjjXXSMNCy_fI0SCKXbPq86PkZ',
         'Accept-Language': 'en_US',
-        'Content-Type':  'application/json'
-      } 
+        'Content-Type': 'application/json'
+      }
     };
 
     request(options, (error, response, body)=> {
@@ -60,6 +59,7 @@ module.exports = class BotUber {
    */
   run () {
     let sync = true;
+
     this.init();
 
     this.request(result => {
@@ -90,7 +90,7 @@ module.exports = class BotUber {
    * getDisplay_name
    * @return {String} display_name
    */
-  getDisplay_name (pos) {
+  getDisplayName (pos) {
     return this.json.prices[0][pos].display_name;
   }
   /**
@@ -106,13 +106,6 @@ module.exports = class BotUber {
    */
   getEstimate (pos) {
     return this.json.prices[0][pos].distance;
-  }
-  /**
-   * getEstimate
-   * @return {String} estimate
-   */
-  getEstimate (pos) {
-    return this.json.prices[0][pos].estimate;
   }
   /**
    * getStartLongitude
@@ -142,5 +135,4 @@ module.exports = class BotUber {
   getEndLongitude () {
     return this.endLongitude;
   }
-  
 };
