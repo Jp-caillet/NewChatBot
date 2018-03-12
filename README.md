@@ -16,17 +16,17 @@ Installer `nodejs` & `npm`
 
 # Utilisation Bots
 
-youtube: /youtube [nom_de_la_video]
-   liste 3 video correspondant au nom entrer
+youtube: /youtube [nom_de_la_video]  
+	liste 3 video correspondant au nom entrer
 
-uber: /uber [nom_de_la_destination]
-   liste les ubers disponible, avec le prix
+uber: /uber [nom_de_la_destination]  
+  liste les ubers disponible, avec le prix
 
-meteo: /meteo [nom_de_la_ville]
-   affiche la temperature et le temps
+meteo: /meteo [nom_de_la_ville]  
+  affiche la temperature et le temps
 
-carrefour: /carrefour
-   liste des carrefour proche, avec leur information
+carrefour: /carrefour  
+  liste des carrefour proche, avec leur information
 
 # Function
 
