@@ -3,10 +3,10 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io').listen(server);
 const path = require('path');
-const BotYoutube = require('botyoutube');
-const BotCarrefour = require('botcarrefour');
-const BotMeteo = require('botmeteo');
-const BotUber = require('botuber');
+const BotYoutube = require('dalleau-bot-youtube');
+const BotCarrefour = require('dalleau-bot-carrefour');
+const BotMeteo = require('dalleau-bot-meteo');
+const BotUber = require('dalleau-bot-uber');
 
 app.use ('/', express.static(path.join(`${__dirname}/public`)));
 

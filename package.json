@@ -1,5 +1,5 @@
 {
-  "name": "chatbot",
+  "name": "dalleau-chatbot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -22,10 +22,10 @@
     "eslint": "^4.16.0"
   },
   "dependencies": {
-    "botcarrefour": "file:packages/botCarrefour",
-    "botmeteo": "file:packages/botMeteo",
-    "botuber": "file:packages/botUber",
-    "botyoutube": "file:packages/botYoutube",
+    "dalleau-bot-carrefour": "^1.0.0",
+    "dalleau-bot-meteo": "^1.0.0",
+    "dalleau-bot-uber": "^1.1.0",
+    "dalleau-bot-youtube": "^1.0.0",
     "deasync": "^0.1.12",
     "express": "^4.10.2",
     "request": "^2.83.0",

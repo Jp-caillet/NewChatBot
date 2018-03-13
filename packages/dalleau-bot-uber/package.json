@@ -1,5 +1,5 @@
 {
-  "name": "botyoutube",
+  "name": "dalleau-bot-uber",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "Guillaume Dalleau",
   "license": "MIT",
   "dependencies": {
+    "botmap": "file:../botMap",
     "deasync": "^0.1.12",
     "request": "^2.83.0"
   },
