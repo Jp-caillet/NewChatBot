@@ -41,7 +41,7 @@ io.sockets.on('connection', socket => {
 
     meteo.run();
 
-    const Weather = {'weather': meteo.getWeatherDesc(), 'temperature': meteo.getTemperature()};
+    const Weather = {'weather': meteo.getWeatherDesc(), 'temperature': meteo.getTemperature(),'city': meteo.getCity()};
 
     socket.emit('messageMeteo', Weather);
   });

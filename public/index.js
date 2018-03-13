@@ -239,7 +239,7 @@ socket.on('uber', (data) => {
 });
 // receive message for a bot Meteo'
 socket.on('messageMeteo', data=> {
-  const content = document.createTextNode(` il fait ${data.temperature}°C et le temp est ${data.weather} `);
+  const content = document.createTextNode(` il fait ${data.temperature}°C et le temp est ${data.weather} à ${data.city}`);
   const elNewDiv = document.createElement('div');
 
   elZoneChat.appendChild(elNewDiv);
